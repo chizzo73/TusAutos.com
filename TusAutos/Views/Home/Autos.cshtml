@@ -1,0 +1,155 @@
+﻿
+@{
+    ViewBag.Title = "Autos";
+}
+
+<section class="containter-fluid">
+    <div class="row">
+        <article id="filter_autos" class="col-md-3">
+            <h2>Busqueda por Filtros</h2>
+            <span class="t_filter">Gamma</span>
+            <ul>
+                <li>Baja</li>
+                <li>Media</li>
+                <li>Alta</li>
+            </ul>
+            <span class="t_filter">Transmisión</span>
+            <ul>
+                <li>Automatica</li>
+                <li>Manual</li>
+            </ul>
+        </article>
+        <article id="list_autos" class="col-md-9">
+            <div class="col-md-12">
+                <ul style="margin:0;padding:0;">
+                    <li class="col-md-4">
+                        <div class="autos_img">
+                            <img src="http://tusautos.com/wp-content/uploads/2015/12/maxresdefault-255x135.jpg" />
+                        </div>
+                        <div class="autos_tt">
+                            BMW 535I, NAVI, LEATHER, ABS
+                        </div>
+                        <div class="autos_prop">
+                            <ul>
+                                <li><img src="../img/combustible.png" />100</li>
+                                <li><img src="../img/velocidad.png" />120km</li>
+                                <li><img src="../img/transmision.png" />Automatica</li>
+                                <div class="clear"></div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="col-md-4">
+                        <div class="autos_img">
+                            <img src="http://tusautos.com/wp-content/uploads/2015/12/maxresdefault-255x135.jpg" />
+                        </div>
+                        <div class="autos_tt">
+                            BMW 535I, NAVI, LEATHER, ABS
+                        </div>
+                        <div class="autos_prop">
+                            <ul>
+                                <li><img src="../img/combustible.png" />100</li>
+                                <li><img src="../img/velocidad.png" />120km</li>
+                                <li><img src="../img/transmision.png" />Automatica</li>
+                                <div class="clear"></div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="col-md-4">
+                        <div class="autos_img">
+                            <img src="http://tusautos.com/wp-content/uploads/2015/12/maxresdefault-255x135.jpg" />
+                        </div>
+                        <div class="autos_tt">
+                            BMW 535I, NAVI, LEATHER, ABS
+                        </div>
+                        <div class="autos_prop">
+                            <ul>
+                                <li><img src="../img/combustible.png" />100</li>
+                                <li><img src="../img/velocidad.png" />120km</li>
+                                <li><img src="../img/transmision.png" />Automatica</li>
+                                <div class="clear"></div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="col-md-4">
+                        <div class="autos_img">
+                            <img src="http://tusautos.com/wp-content/uploads/2015/12/maxresdefault-255x135.jpg" />
+                        </div>
+                        <div class="autos_tt">
+                            BMW 535I, NAVI, LEATHER, ABS
+                        </div>
+                        <div class="autos_prop">
+                            <ul>
+                                <li><img src="../img/combustible.png" />100</li>
+                                <li><img src="../img/velocidad.png" />120km</li>
+                                <li><img src="../img/transmision.png" />Automatica</li>
+                                <div class="clear"></div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="col-md-4">
+                        <div class="autos_img">
+                            <img src="http://tusautos.com/wp-content/uploads/2015/12/maxresdefault-255x135.jpg" />
+                        </div>
+                        <div class="autos_tt">
+                            BMW 535I, NAVI, LEATHER, ABS
+                        </div>
+                        <div class="autos_prop">
+                            <ul>
+                                <li><img src="../img/combustible.png" />100</li>
+                                <li><img src="../img/velocidad.png" />120km</li>
+                                <li><img src="../img/transmision.png" />Automatica</li>
+                                <div class="clear"></div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="col-md-4">
+                        <div class="autos_img">
+                            <img src="http://tusautos.com/wp-content/uploads/2015/12/maxresdefault-255x135.jpg" />
+                        </div>
+                        <div class="autos_tt">
+                            BMW 535I, NAVI, LEATHER, ABS
+                        </div>
+                        <div class="autos_prop">
+                            <ul>
+                                <li><img src="../img/combustible.png" />100</li>
+                                <li><img src="../img/velocidad.png" />120km</li>
+                                <li><img src="../img/transmision.png" />Automatica</li>
+                                <div class="clear"></div>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                </ul>
+                <div id="navegacion">
+                    <ul>
+                        <li id="prev">
+                            Anterior
+                        </li>
+                        <li>
+                            1
+                        </li>
+                        <li>
+                            2
+                        </li>
+                        <li>
+                            3
+                        </li>
+                        <li id="next">
+                            Siguiente
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </article>
+    </div>
+ </section>
+
+<script>
+    var wn = $('#navegacion').width();
+    $('#navegacion').css('width', wn+30);
+    $('#navegacion').css('margin', '0 auto');
+    $('#navegacion').css('float', 'none');
+    $('#navegacion').css('background', 'red');
+</script>
+

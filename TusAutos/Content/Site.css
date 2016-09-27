@@ -1,13 +1,24 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background:url("../img/box_img_4.jpg")no-repeat fixed;
+    background-position:50% 50%;
+    background-size:cover;
+    color:#595959;
 }
 
+footer {
+        background:#191D21;
+        padding:20px 0px 10px 0px;
+        color:#E8E8E8;
+        text-align:center;
+}
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
+
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
@@ -21,4 +32,262 @@ input,
 select,
 textarea {
     input-group
+}
+
+.clear {
+    clear:both;
+}
+
+
+section.containter-fluid {
+             width:100%;
+             height:auto;
+             padding-top:30px;  
+}
+
+/* Seccion Autos */
+
+#filter_autos {
+              
+                background:#fff;
+                border-right:1px dashed #ccc;
+                padding:0px 0px 10px 0px;
+}
+#filter_autos h2 {
+                font-size:1.5em;
+                text-align:center;
+                text-decoration:underline;
+}
+#filter_autos ul {
+            margin:0 auto;
+            padding:0 auto;
+}
+#filter_autos li {
+            list-style:none;
+}
+span.t_filter {
+            font-weight:600;
+            padding-left:10px;
+}
+
+#list_autos {
+            background:#fff;
+            padding-top:40px;
+            padding-bottom:0px;
+            border-bottom:4px solid #D5D5D5;
+            
+            
+}
+#list_autos li {
+            list-style:none;
+            margin-bottom:10px;
+}
+.autos_tt {
+            padding:10px 0px 10px 0px;
+            font-weight:600;
+}
+a#a_vm {
+        padding:7px 20px 7px 20px;
+        background:#4EC5DB;
+        color:#fff;
+        font-weight:500;
+        border-radius:3px;
+        border-bottom:3px solid #42A7BA;
+        float:right;
+}
+a#a_vm:hover {
+        opacity:0.8;
+}
+.autos_prop {
+               width:100%;
+               border-top:1px solid #ccc;
+               padding-top:10px;
+}
+.autos_prop ul {
+                padding:0;
+                margin:0;
+}
+.autos_prop li {
+                float:left;
+                font-size:0.9em;
+                margin-left:2%;
+}
+
+/* Seccion Promotores */
+
+#sec_sl_promotores {
+                background:#232628;
+}
+#sec_sl_promotores h2 {
+                color:#fff;
+                text-align:center;
+                font-weight:600;
+                padding:20px 0px 20px 0px;
+}
+
+
+
+#txt_bienv {
+            color:#F8A01C;
+            font-size:3em;
+            font-weight:600;
+            text-align:center;
+            font-style:italic;
+            padding:20px;
+            text-shadow:0 0 10px #000;
+}
+#txt_bienv h2 {
+           font-size:1em;
+           font-weight:600;
+}
+#img_bienv {
+             
+}
+#img_bienv img {
+            width:100%;
+            max-height:330px;
+            max-width:330px;
+}
+
+#list_promoters {
+            
+           width:100%;
+           background:#fff;
+           padding-bottom:20px;
+}
+#list_promoters ul {
+                    padding:0;
+                    margin:0;
+                    margin-bottom:2%;
+}
+#list_promoters h2 {
+                padding:0;
+                margin:1% 0% 0% 0%;
+                text-align:center;
+                font-size:3em;
+                width:100%;
+                color:#A7A7A7;
+                background:#E8E8E8;
+                border-bottom:3px solid #D4D4D4;
+                padding:10px 0px 10px 0px;
+                cursor:pointer;
+}
+#list_promoters h2:hover {
+                background:#F8A01C;
+                border-bottom:3px solid #D38818;
+                color:#B37414;
+}
+
+#list_promoters li {
+            list-style:none;
+            background:#F4F4F4;
+            padding:20px 0px 10px 0px;
+            border-bottom:2px solid #ccc;
+}
+#info_promoter li {
+              padding:10px 0px 10px 0px;
+              border-bottom:1px dashed #ccc;
+}
+.map {
+            width:100%;
+            height:250px;
+            background:red;
+}
+/* Seccion Quienes Somos */
+
+#sec_qs {
+            background:#fff;
+            padding:20px;
+            border-bottom:4px solid #D5D5D5;
+}
+#sec_qs h2{
+            color:#595959;
+}
+#qs {
+        font-weight:400;
+        font-size:1.2em;
+}
+
+/* Seccion Contacto */
+
+#contacto {
+            width:100%;
+            height:100%;
+            background:#fff;
+            padding-top:40px;
+            padding-bottom:20px;
+            text-align:center;
+            border-bottom:4px solid #D5D5D5;
+}
+#contacto h2 {
+            padding:0;
+            margin:0;
+            color:#5E5E5E;
+}
+#form_contacto {
+            width:90%;
+            margin:0 auto;
+}
+#contacto ul {
+            padding:0;
+            margin:0;
+            margin-top:2%;
+}
+#contacto li {
+            list-style:none;
+            width:100%;
+            margin-bottom:1.5%;
+}
+#contacto input,textarea {
+            width:100%;
+            height:40px;
+            border:none;
+            border-bottom:1px solid #ccc;
+            border-radius:2px;
+            font-size:1.3em;
+            font-style:italic;
+            background:#ECEFF3;
+            padding-left:10px;
+            padding-right:-11px;
+}
+#contacto textarea {
+            height:150px;
+            padding-top:10px;
+}
+#contacto input[type=submit] {
+            background:#22B7D2;
+            color:#fff;
+            font-weight:600;
+            font-size:1.5em;
+            height:50px;
+            border-bottom:3px solid #1D9CB3;
+}
+#contacto input[type="submit"]:hover {
+            opacity:0.8;
+}
+
+/* Navegacion Paginas */
+
+#navegacion {   
+                width:auto;
+                float:left;
+}
+#navegacion ul {
+            padding:0;
+            margin:0;
+            text-align:center;
+}
+#navegacion li {
+            background:#22B7D2;
+            border-bottom:3px solid #42A7BA;
+            color:#fff;
+            border-radius:3px;
+            float:left;
+            padding:5px 10px 5px 10px;
+            margin-left:1%;
+            cursor:pointer;
+}
+
+#navegacion li:hover {
+            opacity:0.8;
 }

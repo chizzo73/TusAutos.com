@@ -7,7 +7,8 @@
     <title>@ViewBag.Title - Encontrá el auto que estas buscando</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/fotorama")
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -20,15 +21,17 @@
                 </button>
                 <div class="navbar-brand" href="@Url.Action("Index","Home")">
                     <a href='@Url.Action("Index", "Home")'>
-                        <img src='@Url.Content("http://tusautos.com/wp-content/uplojuads/2016/06/logo1.png")' />
+                        <img src='@Url.Content("../img/logo.png")' />
                     </a>
                 </div>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav col-md-3 col-md-offset-3" style="height:60px; ">
+                <ul class="nav navbar-nav col-md-5 col-md-offset-5" style="height:60px; ">
                     <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Nosotros", "Nosotros", "Home")</li>
+                    <li>@Html.ActionLink("Autos","Autos","Home")</li>
+                    <li>@Html.ActionLink("Promotores","Promotores","Home")</li>
+                    <li>@Html.ActionLink("Contacto", "Contacto", "Home")</li>
                 </ul>
                 <div class="input-group" style="margin-top:1.2%; width:30%; float:right;">
                     <div class="input-group-btn search-panel">

@@ -13,18 +13,34 @@ namespace TusAutos.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Nosotros()
         {
             ViewBag.Message = "Your application description page.";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Autos()
+        {
+            ViewBag.Message = "Listado de Autos";
+
+            return View();
+        }
+
+        public ActionResult Promotores()
+        {
+            ViewBag.Message = "Promotores de nuestro Sitio.";
+
+            return View();
+        }
+
+        public ActionResult Contacto()
         {
             ViewBag.Message = "Your contact page.";
 
             return View();
         }
+
+        
     }
 }
