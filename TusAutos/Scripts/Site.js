@@ -26,6 +26,11 @@ function PopGoogleMap() {
              ])
              .on('click', function (marker) {
                  marker.setIcon('http://maps.google.com/mapfiles/marker_green.png');
+             });
+
+        $('#close_pop').on('click', function () {
+                    
+            $('#PopUp').fadeOut("slow");
         });
     });
 }
@@ -64,8 +69,8 @@ function res_promoters() {
 
     var width = $(window).width();
     if (width < 500) {
-        $('#list_promoters li').attr('class', 'col-md-6');
 
+        $('.li_promoter').attr('class', 'col-md-6');
         
     }
 }

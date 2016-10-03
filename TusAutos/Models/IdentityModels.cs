@@ -20,6 +20,12 @@ namespace TusAutos.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+
+        public DbSet<Auto> Autos { get; set; }
+        public DbSet<Consesionaria> Consesionarias { get; set; }
+        public DbSet<Promotor> Promotores { get; set; }
+        public DbSet<Imagen> Imagenes { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

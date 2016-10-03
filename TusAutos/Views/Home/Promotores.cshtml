@@ -2,6 +2,22 @@
 @{
     ViewBag.Title = "Promotores";
 }
+<div id="PopUp">
+    <div id="PopUp2">
+        <div id="cont_pop">
+            <div id="top_pop">
+                <h2>Geolocalización</h2>
+                <div id="close_pop">
+                    <img src="../img/close.png" title="Cerrar Pop" />
+                </div>
+            <div class="clear"></div>
+            </div>
+            <div id="mapa_pop">
+
+            </div>
+        </div>
+    </div>
+</div>
 <section class="containter-fluid">
         <article id="bienv_promoters">
             <div class="col-md-1"></div>
@@ -15,25 +31,25 @@
         </article>
         <article id="list_promoters">
             <h2>Promotores</h2>
-            <ul>
-                <li class="col-xs-6" id="li_promoter">
+            <ul id="ul_promoters">
+                <li class="col-xs-6 li_promoter">
                     <div class="col-md-6" id="img_prom">
                         <img src="https://s3-media4.fl.yelpcdn.com/bphoto/2uY6XaTp23N-B1wXbl80Bg/ls.jpg" class="img-responsive" alt="Titulo promotor" />
                     </div>
                     <div class="col-md-6" id="info_promoter">
                         <ul>
-                        <li>Nombre: Zollstocker Autos</li>
-                        <li>Descripcion: Ruedas, Frenos, Repuestos de interior, Baterias, y muchos articulos mas...</li>
-                        <li>Telefono: 2657 - 521269</li>
-                        <li>Direccion:Fuerte Constitucional 334</li>
-                        <li class="btn_map_pr">
-                             Ver localización
-                         </li>
+                            <li>Nombre: Zollstocker Autos</li>
+                            <li>Descripcion: Ruedas, Frenos, Repuestos de interior, Baterias, y muchos articulos mas...</li>
+                            <li>Telefono: 2657 - 521269</li>
+                            <li>Direccion:Fuerte Constitucional 334</li>
+                            <li class="btn_map_pr">
+                                 Ver localización
+                            </li>
                         </ul>
                     </div>
                 <div class="clear"></div>
                 </li>
-                <li class="col-md-6 col-xs-6">
+                <li class="col-xs-6 li_promoter">
                     <div class="col-md-6" id="img_prom">
                         <img src="https://s3-media4.fl.yelpcdn.com/bphoto/2uY6XaTp23N-B1wXbl80Bg/ls.jpg" class="img-responsive" alt="Titulo promotor" />
                     </div>
@@ -50,7 +66,6 @@
                     </div>
                     <div class="clear"></div>
                 </li>
-                
             <div class="clear"></div>
             </ul>
             <div id="navegacion">

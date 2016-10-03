@@ -11,16 +11,6 @@
     @Scripts.Render("~/bundles/fotorama")
 </head>
 <body>
-    <div id="PopUp">
-        <div id="PopUp2">
-            <div id="cont_pop">
-                <h2>Geolocalización</h2>
-                <div id="mapa_pop">
-
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -46,15 +36,11 @@
                 <div class="input-group col-md-offset-3" id="nav_search">
                     <div class="input-group-btn search-panel">
                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            <span id="search_concept">Filter by</span> <span class="caret"></span>
+                            <span id="search_concept">Filtros</span> <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#contains">Contains</a></li>
-                            <li><a href="#its_equal">It's equal</a></li>
-                            <li><a href="#greather_than">Greather than ></a></li>
-                            <li><a href="#less_than">Less than < </a></li>
-                            <li class="divider"></li>
-                            <li><a href="#all">Anything</a></li>
+                            <li><a href="#cars">Autos</a></li>
+                            <li><a href="#promoters">Promotores</a></li>
                         </ul>
                     </div>
                     <input type="hidden" name="search_param" value="all" id="search_param">
