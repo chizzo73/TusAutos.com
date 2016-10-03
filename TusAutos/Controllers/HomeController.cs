@@ -27,6 +27,13 @@ namespace TusAutos.Controllers
             return View();
         }
 
+        public ActionResult Auto()
+        {
+            ViewBag.Message = "Vista de Auto";
+
+            return View();
+        }
+
         public ActionResult Promotores()
         {
             ViewBag.Message = "Promotores de nuestro Sitio.";

@@ -11,6 +11,16 @@
     @Scripts.Render("~/bundles/fotorama")
 </head>
 <body>
+    <div id="PopUp">
+        <div id="PopUp2">
+            <div id="cont_pop">
+                <h2>Geolocalización</h2>
+                <div id="mapa_pop">
+
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -25,15 +35,15 @@
                     </a>
                 </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav col-md-5 col-md-offset-5" style="height:60px; ">
+            <div class="navbar-collapse collapse" id="nav_prin">
+                <ul class="nav navbar-nav col-md-6" style="margin:0;">
                     <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
                     <li>@Html.ActionLink("Nosotros", "Nosotros", "Home")</li>
                     <li>@Html.ActionLink("Autos","Autos","Home")</li>
                     <li>@Html.ActionLink("Promotores","Promotores","Home")</li>
                     <li>@Html.ActionLink("Contacto", "Contacto", "Home")</li>
                 </ul>
-                <div class="input-group" style="margin-top:1.2%; width:30%; float:right;">
+                <div class="input-group col-md-offset-3" id="nav_search">
                     <div class="input-group-btn search-panel">
                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                             <span id="search_concept">Filter by</span> <span class="caret"></span>
