@@ -8,6 +8,10 @@ namespace TusAutos.Models
 {
     public class Consesionaria
     {
+        public Consesionaria(){
+            Autos = new List<Auto>();    
+        }
+
         public int Id { get; set; }
         [DisplayName("Nombre")]
         public string Nombre { get; set; }
@@ -21,6 +25,7 @@ namespace TusAutos.Models
         [DisplayName("Email")]
         public string Email { get; set; }
 
-        public virtual ICollection<Consesionaria> Consesionarias { get; set; }
+
+        public virtual ICollection<Auto> Autos { get; set; }
     }
 }

@@ -1,7 +1,6 @@
 ﻿//Functiones On
 Navigation_center();
 Nav_auto_information();
-res_promoters();
 PopGoogleMap();
 
 // :::: Funciones :::: 
@@ -63,17 +62,6 @@ function Navigation_center() {
 
 }
 
-// Nav Search 
-
-function res_promoters() {
-
-    var width = $(window).width();
-    if (width < 500) {
-
-        $('.li_promoter').attr('class', 'col-md-6');
-        
-    }
-}
 
 // View Auto Nav Information
 function Nav_auto_information() {
