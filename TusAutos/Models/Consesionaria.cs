@@ -13,15 +13,21 @@ namespace TusAutos.Models
         }
 
         public int Id { get; set; }
+
         [DisplayName("Nombre")]
         public string Nombre { get; set; }
+
         [DisplayName("Direccion")]
         public string Direccion { get; set; }
+
         [DisplayName("Geolocalizacion")]
         public decimal Lat { get; set; }
+
         public decimal Lon { get; set; }
+
         [DisplayName("Telefono")]
         public int Telefono { get; set; }
+
         [DisplayName("Email")]
         public string Email { get; set; }
 
