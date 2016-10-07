@@ -3,7 +3,9 @@ Navigation_center();
 Nav_auto_information();
 PopGoogleMap();
 
+
 // :::: Funciones :::: 
+
 
 // On PopGoogleMap
 function PopGoogleMap() {

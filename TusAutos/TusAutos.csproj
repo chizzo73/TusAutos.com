@@ -168,10 +168,18 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AutoesController.cs" />
+    <Compile Include="Controllers\ConsesionariasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ImagensController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PromotorsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610041839420_Migracion1Prueba.cs" />
+    <Compile Include="Migrations\201610041839420_Migracion1Prueba.Designer.cs">
+      <DependentUpon>201610041839420_Migracion1Prueba.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -193,14 +201,36 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\AFICHE.fw.png" />
+    <Content Include="Images\D3A.jpg" />
+    <Content Include="img\auto1foto1.jpg" />
+    <Content Include="img\auto1foto2.jpg" />
+    <Content Include="img\auto1foto3.jpg" />
+    <Content Include="img\auto3.jpg" />
+    <Content Include="img\auto4.jpg" />
+    <Content Include="img\auto5.jpg" />
+    <Content Include="img\auto6.jpg" />
+    <Content Include="img\auto7.jpg" />
+    <Content Include="img\auto8.jpg" />
     <Content Include="img\box_img_4.jpg" />
+    <Content Include="img\car.png" />
+    <Content Include="img\close.png" />
     <Content Include="img\combustible.png" />
     <Content Include="img\fotorama%402x.png" />
     <Content Include="img\fotorama.png" />
+    <Content Include="img\location.png" />
     <Content Include="img\logo.png" />
     <Content Include="img\p1.png" />
     <Content Include="img\p2.png" />
+    <Content Include="img\peug2.jpg" />
+    <Content Include="img\phone.png" />
+    <Content Include="img\promotor1.jpg" />
+    <Content Include="img\promotor2.jpg" />
+    <Content Include="img\promotor3.jpg" />
+    <Content Include="img\promotorimg1.JPG" />
+    <Content Include="img\promotorimg2.JPG" />
     <Content Include="img\publicite.png" />
+    <Content Include="img\quienes-somos.jpg" />
     <Content Include="img\transmision.png" />
     <Content Include="img\velocidad.png" />
     <Content Include="Scripts\bootstrap.js" />
@@ -212,6 +242,10 @@
     <Content Include="Scripts\gmap3\package.json" />
     <Content Include="Scripts\gmap3\README.md" />
     <Content Include="Scripts\gmap3\tests\.jshintrc" />
+    <None Include="Properties\PublishProfiles\tusautos - FTP %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\tusautos - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\tusautos - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\tusautos - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\fotorama.js" />
     <Content Include="Scripts\gmap3\.gitignore" />
@@ -361,10 +395,29 @@
     <Content Include="Views\Home\Promotores.cshtml" />
     <Content Include="Views\Home\Autos.cshtml" />
     <Content Include="Views\Home\Auto.cshtml" />
+    <Content Include="Views\Autoes\Create.cshtml" />
+    <Content Include="Views\Autoes\Delete.cshtml" />
+    <Content Include="Views\Autoes\Details.cshtml" />
+    <Content Include="Views\Autoes\Edit.cshtml" />
+    <Content Include="Views\Autoes\Index.cshtml" />
+    <Content Include="Views\Promotors\Create.cshtml" />
+    <Content Include="Views\Promotors\Delete.cshtml" />
+    <Content Include="Views\Promotors\Details.cshtml" />
+    <Content Include="Views\Promotors\Edit.cshtml" />
+    <Content Include="Views\Promotors\Index.cshtml" />
+    <Content Include="Views\Imagens\Create.cshtml" />
+    <Content Include="Views\Imagens\Delete.cshtml" />
+    <Content Include="Views\Imagens\Details.cshtml" />
+    <Content Include="Views\Imagens\Edit.cshtml" />
+    <Content Include="Views\Imagens\Index.cshtml" />
+    <Content Include="Views\Consesionarias\Create.cshtml" />
+    <Content Include="Views\Consesionarias\Delete.cshtml" />
+    <Content Include="Views\Consesionarias\Details.cshtml" />
+    <Content Include="Views\Consesionarias\Edit.cshtml" />
+    <Content Include="Views\Consesionarias\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -373,6 +426,11 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201610041839420_Migracion1Prueba.resx">
+      <DependentUpon>201610041839420_Migracion1Prueba.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

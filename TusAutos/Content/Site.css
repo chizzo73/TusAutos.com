@@ -14,10 +14,74 @@ ul {
 
 footer {
         background:#191D21;
-        padding:20px 0px 10px 0px;
+        padding:20px 0px 0px 0px;
         color:#E8E8E8;
         text-align:center;
+        height:auto;
 }
+footer a {
+        display:inherit;
+        list-style:none;
+        padding:10px 0px 10px 0px;
+        border-bottom:1px dashed #5A5A5A;
+        font-weight:600;
+        font-size:1.2em;
+        color:#D9A501;
+}
+footer a:hover {
+        color:#B88C01;
+}
+#cred_foot {
+        padding:10px 0px 1px 0px;
+        background:#3C3E41;
+        margin-top:20px;
+}
+
+/* :::: SLIDER :::: */
+.jk-slider{
+    width:100%;
+}
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 6em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
@@ -32,6 +96,11 @@ footer {
     white-space: normal;
 }
 
+/* Label Inputs */
+.control-label {
+        font-weight:600;
+}
+
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
@@ -41,6 +110,15 @@ textarea {
 /* Nav Principal */
 #nav_prin { 
             padding:0px 0px 0px 0px;
+
+}
+#nav_prin ul {
+            height:60px;
+           
+}
+#nav_prin li {
+           height:100%;
+           padding:5px 0px 5px 0px;
 }
 #nav_search {
             padding:0px 10px 0px 10px;
@@ -77,6 +155,9 @@ section.containter-fluid {
             margin:0 auto;
             padding:0 auto;
 }
+#filter_autos a {
+            color:#6F6F6F;
+}
 #filter_autos li {
             list-style:none;
             margin-left:5%;
@@ -91,7 +172,7 @@ span.t_filter {
 
 #list_autos {
             background:#fff;
-            padding-top:40px;
+            padding-top:20px;
             padding-bottom:0px;
             border-bottom:4px solid #D5D5D5;
             
@@ -101,21 +182,45 @@ span.t_filter {
 
             height:auto;
             width:100%;
+            margin-bottom:2%!important;
             
 }
 .autos_img {
         text-align:center;
+        height:130px;
 }
 .autos_img img {
         margin:0 auto;
+        height:100%;
 }
 #vmautos {
         height:40px;
         text-align:right;
 }
-#list_autos li {
+#list_autos li.li_car {
             list-style:none;
-            margin-bottom:10px;
+            margin-bottom:5px;
+            padding-top:20px;
+            padding-bottom:20px;
+            -webkit-transition-property:box-shadow,background;
+            -webkit-transition-duration: 0.4s;
+            -webkit-transition-timing-function: ease-out;
+            -o-transition-property:box-shadow,background;
+            -o-transition-duration: 0.4s;
+            -o-transition-timing-function: ease-out;
+            -moz-transition-property:box-shadow,background;
+            -moz-transition-duration: 0.4s;
+            -moz-transition-timing-function: ease-out;
+            transition-property:box-shadow,background;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-out;
+}
+#list_autos li.li_car:hover{
+            background:#F2F2F2;
+            box-shadow:0 0 15px #8A8A8A;
+}
+#list_autos a {
+              color:#595959;
 }
 .autos_tt {
             padding:10px 0px 10px 0px;
@@ -145,6 +250,7 @@ a#a_vm:hover {
                 float:left;
                 font-size:0.9em;
                 margin-left:2%;
+                list-style:none;
 }
 
 
@@ -191,6 +297,9 @@ a#a_vm:hover {
                padding:10px;
                float:left;
                width:100%;
+}
+#tx_info_auto {
+            font-size:1.2em;
 }
 #docu_cons {
 }
@@ -366,7 +475,14 @@ a#a_vm:hover {
         font-weight:400;
         font-size:1.2em;
 }
-
+#img_qs {
+        width:80%;
+        margin:0 auto;
+        text-align:center;
+}
+#img_qs img {
+        width:100%;
+}
 /* Seccion Contacto */
 
 #contacto {
@@ -430,8 +546,7 @@ a#a_vm:hover {
 #navegacion {   
                 width:auto;
                 float:left;
-                padding:5px 0px 5px 0px;
-                height:40px;
+                height:45px;
                 background:none;
                 clear:both;
 }
@@ -449,6 +564,7 @@ a#a_vm:hover {
             padding:5px 10px 5px 10px;
             margin-left:1%;
             cursor:pointer;
+            list-style:none;
 }
 
 #navegacion li:hover {

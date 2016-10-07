@@ -42,6 +42,7 @@ namespace TusAutos.Models
 
         [DisplayName("Consesionaria")]
         [ForeignKey("Consesionaria")]
+
         public int ConsesionariaId { get; set; }
         public virtual Consesionaria Consesionaria { get; set; }
 
